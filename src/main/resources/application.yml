@@ -1,0 +1,38 @@
+debug:
+  enable: true
+
+spring:
+  application:
+    name: doublecreamapi
+
+  mail:
+    host: smtp.gmail.com
+
+    port: 587
+
+    username: moviesrental.notificationhub@gmail.com
+
+    password: qbqyjzgpvnxqxhks
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  datasource:
+    url: jdbc:postgresql://yourdns/postgres
+    username: postgres
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQL81Dialect
